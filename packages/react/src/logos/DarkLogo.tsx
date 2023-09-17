@@ -2,6 +2,7 @@ import './DarkLogo.css';
 
 interface DarkLogoProps {
     secondary?: boolean;
+    logoUrl?: string;
 }
 
 function DarkLogo(props: DarkLogoProps) {
@@ -9,7 +10,7 @@ function DarkLogo(props: DarkLogoProps) {
         <div>
             <a href="https://dm3.network">
                 <img
-                    src="dm3-logo.png"
+                    src={props.logoUrl}
                     className="align-self-center"
                     style={
                         props.secondary

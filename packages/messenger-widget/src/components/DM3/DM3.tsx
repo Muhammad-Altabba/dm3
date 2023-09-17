@@ -131,6 +131,7 @@ function DM3(props: Dm3Props) {
                     hideStorageSelection={props.config.hideStorageSelection}
                     defaultStorageLocation={props.config.defaultStorageLocation}
                     miniSignIn={props.config.miniSignIn}
+                    logoUrl={props.config.logoUrl}
                 />
             ) : (
                 <div className="mt-3 ml-3 h-auto rounded dashboard-container background-container">

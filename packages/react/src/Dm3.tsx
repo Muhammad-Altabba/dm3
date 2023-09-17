@@ -257,11 +257,12 @@ function dm3(props: dm3Props) {
                                     props.config.defaultStorageLocation
                                 }
                                 miniSignIn={props.config.miniSignIn}
+                                logoUrl={props.config.logoUrl}
                             />
                         ) : (
                             <>
                                 <LeftView getContacts={getContacts} />
-                                <RightView />
+                                <RightView logoUrl={'props.config.logoUrl'} />
                             </>
                         )}
                     </div>

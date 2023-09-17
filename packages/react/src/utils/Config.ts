@@ -15,6 +15,7 @@ export interface Config {
     warnBeforeLeave: boolean;
     browserStorageBackup: boolean;
     showHelp: boolean;
+    logoUrl: string;
 }
 
 const DefaultConfig: Config = {
@@ -31,6 +32,7 @@ const DefaultConfig: Config = {
     warnBeforeLeave: false,
     browserStorageBackup: false,
     showHelp: false,
+    logoUrl: 'dm3-logo.png',
 };
 
 export function getConfig(overwrite: Partial<Config>): Config {

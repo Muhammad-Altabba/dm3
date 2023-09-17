@@ -15,6 +15,7 @@ interface SignInProps {
     hideStorageSelection: boolean;
     miniSignIn: boolean;
     defaultStorageLocation: StorageLocation | undefined;
+    logoUrl?: string;
 }
 
 function SignIn(props: SignInProps) {
@@ -163,7 +164,7 @@ function SignIn(props: SignInProps) {
     return (
         <div className="w-100 d-flex flex-column align-items-center sign-in-main h-100">
             <div className="d-flex justify-content-center sign-in-logo">
-                <DarkLogo />
+                <DarkLogo logoUrl={props.logoUrl} />
             </div>
             <div className="d-flex justify-content-center mb-4">
                 <div className="d-flex justify-content-center">

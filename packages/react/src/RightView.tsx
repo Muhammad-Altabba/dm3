@@ -8,7 +8,11 @@ import { SelectedRightView, UiStateType } from './reducers/UiState';
 import { AccountInfo } from './reducers/shared';
 import UserInfo from './user-info/UserInfo';
 
-function RightView() {
+interface Props {
+    logoUrl?: string;
+}
+
+function RightView(props: Props) {
     const { state, dispatch } = useContext(GlobalContext);
 
     useEffect(() => {
@@ -45,7 +49,7 @@ function RightView() {
                 <div className="row h-100">
                     <div className="col-md-12 text-center w-100 d-flex  h-100">
                         <div className="align-self-center w-100 d-flex justify-content-center">
-                            <DarkLogo secondary={true} />
+                            <DarkLogo secondary={true} logoUrl={props.logoUrl} />
                         </div>
                     </div>
                 </div>
@@ -85,7 +89,7 @@ function RightView() {
                 <div className={`row`}>
                     <div className="col-md-12 text-center row-space d-flex flex-column">
                         <div className="align-self-center mb-3">
-                            <DarkLogo />
+                            <DarkLogo logoUrl={props.logoUrl} />
                         </div>
                         <strong style={{ color: '#fff' }}>
                             No Ethereum provider detected. Please install a

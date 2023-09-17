@@ -26,7 +26,7 @@ export default function Dashboard(props: DashboardProps) {
                             : '')
                     }
                 >
-                    <RightView />
+                    <RightView logoUrl={props.dm3Props.config.logoUrl} />
                 </div>
             </div>
         </div>

@@ -18,6 +18,7 @@ const DefaultConfig: Config = {
     theme: 'default',
     ethereumProvider: '' as string,
     walletConnectProjectId: '' as string,
+    logoUrl: 'dm3-logo.png',
 };
 
 export function getConfig(overwrite: Partial<Config>): Config {

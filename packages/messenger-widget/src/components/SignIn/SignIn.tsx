@@ -1,5 +1,4 @@
 import './SignIn.css';
-import dm3Logo from '../../assets/images/dm3-logo.png';
 import { homeImage } from '../../assets/base64/home-image';
 import { useContext, useEffect, useState } from 'react';
 import { SignInProps } from '../../interfaces/web3';
@@ -204,7 +203,7 @@ export function SignIn(props: SignInProps) {
                         <div className="d-flex flex-column justify-content-center">
                             <img
                                 className="h-auto sign-in-logo"
-                                src={dm3Logo}
+                                src={props.logoUrl}
                                 alt="DM3 logo"
                             />
                         </div>

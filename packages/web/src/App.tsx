@@ -10,6 +10,7 @@ function App() {
                 defaultContacts={['help.dm3.eth']}
                 defaultServiceUrl={process.env.REACT_APP_DEFAULT_SERVICE}
                 showAlways={true}
+                // logoUrl='your-logo.png' // set the logo like this or else it will use the default
                 // connectionStateChange={(state: ConnectionState) =>
                 //     setShowLogo(state === ConnectionState.SignedIn)
                 // }
